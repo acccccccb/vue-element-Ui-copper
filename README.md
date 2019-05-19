@@ -1,37 +1,35 @@
-## Welcome to GitHub Pages
+## vue图片裁剪插件，支持任意尺寸裁剪和等比例裁剪
+![插件截图](http://www.ihtmlcss.com/wp-content/uploads/2019/05/%E6%8D%95%E8%8E%B7-707x550.jpg)
 
-You can use the [editor on GitHub](https://github.com/acccccccb/vue-element-Ui-copper/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+##### 演示地址：[http://ihtmlcss.com/demo/dist/#/croptool](http://ihtmlcss.com/demo/dist/#/croptool)
+##### 项目地址：[https://github.com/acccccccb/vue-element-Ui-copper](https://github.com/acccccccb/vue-element-Ui-copper)
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+### 使用方法
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
+#####  1. 此插件需要在vue + element-Ui中使用，将CropTool.vue文件以组件的形式引入项目，如果你没有用到element-Ui需要将插件中的el标签替换成普通的html标签：
+```
+import CropTool from '../../../base/plugin/CropTool'
+export default {
+        components:{
+            CropTool
+        },
+...
+}
+```
+##### 2. 在项目中使用组件：
+```
+<CropTool
+    v-bind:label="'选择图片'"
+    v-bind:boxWidth="800"
+    v-bind:boxHeight="400"
+    v-bind:rate="16:9"
+    v-on:cutDown="cudDown"
+></CropTool>
 ```
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/acccccccb/vue-element-Ui-copper/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### 参数说明：
+- label:按钮的显示文字，字符串，选填
+- boxWidth:裁剪工具宽度，数字，选填
+- boxHeight:裁剪工具高度，数字，选填
+- rate:图片比例，字符串，选填，例:16:9
+- cutDown:完成截图后要执行的方法，必填，截图后返回Blob和dataUr
