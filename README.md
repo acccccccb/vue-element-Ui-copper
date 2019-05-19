@@ -1,5 +1,5 @@
 ## vue图片裁剪插件，支持任意尺寸裁剪和等比例裁剪
-![插件截图](http://www.ihtmlcss.com/wp-content/uploads/2019/05/%E6%8D%95%E8%8E%B7-707x550.jpg)
+![插件截图](http://www.ihtmlcss.com/wp-content/uploads/2019/05/cut-707x550.jpg)
 
 ##### 演示地址：[http://ihtmlcss.com/demo/dist/#/croptool](http://ihtmlcss.com/demo/dist/#/croptool)
 ##### 项目地址：[https://github.com/acccccccb/vue-element-Ui-copper](https://github.com/acccccccb/vue-element-Ui-copper)
@@ -32,4 +32,4 @@ export default {
 - boxWidth:裁剪工具宽度，数字，选填
 - boxHeight:裁剪工具高度，数字，选填
 - rate:图片比例，字符串，选填，例:16:9
-- cutDown:完成截图后要执行的方法，必填，截图后返回Blob和dataUr
+- cutDown:完成截图后要执行的方法，必填，截图后返回Blob和dataUrl
