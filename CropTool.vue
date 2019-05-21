@@ -249,7 +249,7 @@
           ctx.clearRect(x,y,width,width/p);
           $toolBoxControl.style.width = width+'px';
           $toolBoxControl.style.height = width/p+'px';
-          this.toolBox.height = width;
+          this.toolBox.height = width/p;
         } else {
           ctx.clearRect(x,y,width,height);
           $toolBoxControl.style.width = width+'px';
