@@ -142,6 +142,9 @@
       chooseImg:function(){
         this.$refs['inputFile'].value = "";
         this.drawImg.img = null;
+        let c = this.$refs['canvas'];
+        let ctx = c.getContext("2d");
+        ctx.clearRect(0,0,c.width,c.height);
         this.$refs['inputFile'].click();
       },
       // 将选择的图片绘制到画布
