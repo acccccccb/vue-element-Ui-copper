@@ -1,4 +1,8 @@
 ## vue图片裁剪插件，支持任意尺寸裁剪和等比例裁剪
+
+### 此项目迁移至：[https://github.com/acccccccb/vue-img-cutter](https://github.com/acccccccb/vue-img-cutter)
+> vue-img-cutter 已经发布至npm且不再依赖elementUI
+
 ![插件截图](http://www.ihtmlcss.com/wp-content/uploads/2019/05/cut-707x550.jpg)
 
 ##### 演示地址：[http://ihtmlcss.com/demo/dist/#/croptool](http://ihtmlcss.com/demo/dist/#/croptool)
